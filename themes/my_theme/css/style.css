@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     margin: 8px auto;
     max-width: 1000px;
+    background-color: AliceBlue;
 }
 
 .main {
