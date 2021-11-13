@@ -4,7 +4,7 @@ Description: This is our index page.
 ---
 
 Home page
-==========================
+--------------------------
 
 <p><img src="../portfolio/assets/img/sparvagn.jpg" alt="Bild på mig" width="500"></p>
 

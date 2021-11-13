@@ -1,14 +1,14 @@
 <div class="header" role="banner">
     <div class="site-header">
-        {% if pages["_meta"].meta.logo %}
-        <div class="logo">
-            <a href="{{ base_url }}">
-                <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
-            </a>
-        </div>
-        {% endif %}
+    <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+    {% for logo in pages["_meta"].meta.logo %}
+    <a href="{{ logo.url }}" title="{{ logo.title }}" role="button">
+        <i class="{{ logo.icon }}" aria-hidden="true"></i>
+        <span class="sr-only">{{ logo.title }}</span>
+    </a>
+    {% endfor %}
         <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
-            <a href="{{ base_url }}">
+            <a href="https://dbwebb.se/uppgift/utveckla-din-portfolio-kmom02">
                 <h1>{{ site_title }}</h1>
                 {{ pages["_meta"].meta.tagline|markdown }}
             </a>
@@ -31,3 +31,13 @@
         </div>
     </div>
 </div>
+
+<!--
+{% if pages["_meta"].meta.logo %}
+<div class="logo">
+    <a href="{{ base_url }}">
+        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
+    </a>
+</div>
+{% endif %}
+-->
