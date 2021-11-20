@@ -374,7 +374,7 @@ template {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 787px) {
   .header {
     flex-direction: column;
   }
@@ -454,6 +454,64 @@ pre code {
   background: transparent;
   overflow-x: auto;
   line-height: 1.4;
+}
+
+.technology-container {
+  display: grid;
+  gap: 45px 45px;
+  max-height: 800px;
+}
+
+.head {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+}
+
+.technology {
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  /* grid-template-columns: auto;
+  grid-template-rows: 50px 100px 50px; */
+}
+
+.technology-last-box {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+  width: 700px;
+  height: 150px;
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+  padding: 20px;
+}
+
+.technology:hover {
+  background-color: #73ad21;
+}
+
+.technology-last-box:hover {
+  background-color: #73ad21;
+}
+
+.technology-article {
+  display: flex;
+  gap: 0 2em;
+}
+
+.sidebar {
+  border-right: 1px solid #222;
+  padding: 2em 2em 2em 0;
+}
+
+.article {
+  padding: 1em;
 }
 
 /*!
@@ -6657,7 +6715,7 @@ body {
   width: 150px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 787px) {
   .title,
 .logo {
     padding: 1em 1em 1em 0;
@@ -6673,6 +6731,32 @@ body {
 
   .main {
     padding: 1em;
+  }
+
+  .technology-container {
+    display: flex !important;
+    flex-direction: column;
+    width: none;
+    gap: 20px 45px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .technology-last-box {
+    width: 200px;
+    height: 150px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .article {
+    padding: 1em;
+  }
+
+  .technology-last-box {
+    width: 200px;
   }
 }
 @media (max-width: 360px) {
@@ -6696,7 +6780,7 @@ body {
 }
 
 .nav ul li:hover {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 80px;
 }
 
 /* Footer */

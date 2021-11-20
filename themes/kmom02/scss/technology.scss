@@ -1,0 +1,13 @@
+.technology-article {
+    display: flex;
+    gap: 0 2em;
+}
+
+.sidebar {
+    border-right: $border-style;
+    padding: 2em 2em 2em 0;
+}
+
+.article {
+    padding: 1em;
+}
