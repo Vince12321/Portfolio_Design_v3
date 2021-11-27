@@ -5,12 +5,13 @@ Description: Documentation that came with Pico.
 ---
 
 ## Welcome to Pico
-
+<br>
 Congratulations, you have successfully installed [Pico][] %version%.
 %meta.description% <!-- replaced by the above Description header -->
-
+<br>
+<br>
 ## Creating Content
-
+<br>
 Pico is a flat file CMS. This means there is no administration backend or
 database to deal with. You simply create `.md` files in the `content` folder
 and those files become your pages. For example, this file is called `index.md`
@@ -74,9 +75,9 @@ by default. If you want to use some assets (e.g. a image) in one of your content
 files, use Pico's `assets` folder. You can then access them in your Markdown
 using the <code>&#37;assets_url&#37;</code> placeholder, for example:
 <code>!\[Image Title\](&#37;assets_url&#37;/image.png)</code>
-
+<br>
 ### Text File Markup
-
+<br>
 Text files are marked up using [Markdown][] and [Markdown Extra][MarkdownExtra].
 They can also contain regular HTML.
 
@@ -123,9 +124,9 @@ There are also certain variables that you can use in your text files:
   page, e.g. <code>&#37;meta.author&#37;</code> is replaced with `Joe Bloggs`
 * <code>&#37;config.&#42;&#37;</code> - Access any scalar config variable,
   e.g. <code>&#37;config.theme&#37;</code> is replaced with `default`
-
+<br>
 ### Blogging
-
+<br>
 Pico is not blogging software - but makes it very easy for you to use it as a
 blog. You can find many plugins out there implementing typical blogging
 features like authentication, tagging, pagination and social plugins. See the
@@ -153,7 +154,7 @@ something like the following:
         </div>
     {% endfor %}
    ```
-
+<br>
 ## Customization
 
 Pico is highly customizable in two different ways: On the one hand you can
@@ -165,7 +166,7 @@ This is all Greek to you? Don't worry, you don't have to spend time on these
 techie talk - it's very easy to use one of the great themes or plugins others
 developed and released to the public. Please refer to the next sections for
 details.
-
+<br><br>
 ### Themes
 
 You can create themes for your Pico installation in the `themes` folder. Pico
@@ -237,7 +238,7 @@ the expected <code>My **favorite** color</code>). Notable exceptions to this
 are Pico's `content` variable (e.g. `{{ content }}`), Pico's `content` filter
 (e.g. `{{ "sub/page"|content }}`), and Pico's `markdown` filter, they all are
 marked as HTML safe.
-
+<br><br>
 #### Dealing with pages
 
 There are several ways to access Pico's pages list. You can access the current
@@ -301,7 +302,7 @@ as an replacement for Pico's `pages()` function. Its usage looks very similar,
 it will kinda work and you might even see it being used in old themes, but be
 warned: It slows down Pico. Always use Pico's `pages()` function when iterating
 Pico's page list (e.g. `{% for page in pages() %}…{% endfor %}`).
-
+<br><br>
 #### Twig filters and functions
 
 Additional to [Twig][]'s extensive list of filters, functions and tags, Pico
@@ -342,7 +343,7 @@ even easier.
   pagination, tags and categories, dynamic pages, and even more - with pure
   Twig! Simply head over to our [introductory page for accessing HTTP
   parameters][FeaturesHttpParams] for details.
-
+<br><br>
 ### Plugins
 
 #### Plugins for users
@@ -368,7 +369,7 @@ disabled through your `config/config.yml`. If you want to e.g. disable the
 `PicoDeprecated` plugin, add the following line to your `config/config.yml`:
 `PicoDeprecated.enabled: false`. To force the plugin to be enabled, replace
 `false` by `true`.
-
+<br><br>
 ## Config
 
 Configuring Pico really is stupidly simple: Just create a `config/config.yml`
@@ -388,7 +389,7 @@ order is crucial: Config values which have been set already, cannot be
 overwritten by a succeeding file. For example, if you set `site_title: Pico` in
 `config/a.yml` and `site_title: My awesome site!` in `config/b.yml`, your site
 title will be "Pico".
-
+<br><br>
 ## Documentation
 
 For more help have a look at the Pico documentation at http://picocms.org/docs.

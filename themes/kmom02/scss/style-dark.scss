@@ -15,11 +15,11 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&display=swap');
 
 body {
-    background-color: $background-color-body;
+    background-color: $background-color-body-dark;
 }
 
 * {
-    color: $font-color;
+    color: $font-color-dark;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     border: 0 none;
@@ -40,6 +40,11 @@ h6 {
 
 h1 {
     margin: 0;
+    color: $title-color-dark;
+}
+
+h2 {
+    color: $title-color-dark;
 }
 
 ol,
@@ -54,6 +59,7 @@ ul {
 html,
 body {
     height: 100%;
+    color: $font-color-dark;
 }
 
 /* Placement */
@@ -66,11 +72,6 @@ body {
     width: 100%;
 }
 
-.header,
-.footer {
-    flex: 0 0 auto;
-}
-
 /* Header */
 
 .header,
@@ -81,37 +82,37 @@ body {
 
 .headheader {
     width: 100%;
-    background-color: $background-color-header-footer;
+    background-color: $background-color-header-footer-dark;
 }
 
 .header {
-    background-color: $background-color-header-footer;
+    background-color: $background-color-header-footer-dark;
     max-width: 1100px;
     margin: 0 auto;
-    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
 .fa-github-alt {
     margin: 20px;
+    color: $font-color-dark;
 }
 
 .nav a,
 .nav-toggle {
-    color: $font-color-nav;
+    color: $font-color-nav-dark;
 }
 
 /* Title */
 
-.title * {
-    color: $title-color;
-    position: relative;
-    top: 5px;
-    text-decoration: none;
-}
-
 .title,
 .logo {
     padding: 1em;
+}
+
+.title * {
+    color: $title-color-dark;
+    position: relative;
+    top: 5px;
+    text-decoration: none;
 }
 
 .logo {
@@ -122,38 +123,71 @@ body {
     margin: 0 20px;
 }
 
+.footer {
+    background-color: $background-color-header-footer-dark;
+}
+
 /* Main */
+
+.main {
+    background-color: $background-color-main-dark;
+}
 
 .main {
     flex: 1 0 auto;
     padding: 3em;
-    /* margin: 1em 0; */
+    margin: 4px 0;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-color: $background-color-main;
-    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
 .main h2 {
     text-align: center;
 }
 
+.main pre,
+.main code {
+    background: none !important;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: $border-style;
+    padding: 8px;
+    border-radius: 0 0 15px 15px;
+}
+
+.footer a {
+    color: #222;
+}
+
+.footer
+.social {
+    font-size: 2rem;
+}
+
+.social a {
+    margin: 0 15px;
+}
+
+/* Responiveness */
+
 @media (max-width: 787px) {
     .title,
     .logo {
         padding: 1em 1em 1em 0;
     }
-    /*
-    .title {
-        min-width: 30%;
-    }
 
-    .logo {
-        max-width: 30%;
-    }
-    */
     .main {
         padding: 1em;
     }
@@ -200,31 +234,6 @@ body {
     }
 }
 
-/* Footer */
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    border-top: $border-style;
-    padding: 8px;
-    border-radius: 0 0 15px 15px;
-    background-color: $background-color-header-footer;
-    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
-}
-
-.footer a {
-    color: #222;
-}
-
-.footer
-.social {
-    font-size: 2rem;
-}
-
-.social a {
-    margin: 0 15px;
-}
-
 /* Typografy */
 
 body {
@@ -246,7 +255,7 @@ dd {
 img {
     max-width: 100%;
     margin: 1em auto;
-    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
 }
 
 .img-parent {

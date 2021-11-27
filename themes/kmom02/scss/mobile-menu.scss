@@ -12,8 +12,14 @@
     }
 
     ul li {
-        padding: 0 1em;
+        margin: 0 1em;
+        /* padding: 5px; */
+        border-radius: 10px;
     }
+}
+
+.nav a:hover {
+    color: #fff;
 }
 
 /*
@@ -28,11 +34,6 @@
     padding: 0 1em;
 }
 */
-
-.nav a,
-.nav-toggle {
-    color: #333;
-}
 
 .nav-toggle {
     display: none;
