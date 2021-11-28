@@ -5,13 +5,13 @@ Description: Documentation that came with Pico.
 ---
 
 ## Welcome to Pico
-<br>
+
 Congratulations, you have successfully installed [Pico][] %version%.
 %meta.description% <!-- replaced by the above Description header -->
 <br>
 <br>
 ## Creating Content
-<br>
+
 Pico is a flat file CMS. This means there is no administration backend or
 database to deal with. You simply create `.md` files in the `content` folder
 and those files become your pages. For example, this file is called `index.md`
