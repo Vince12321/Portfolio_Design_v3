@@ -6804,6 +6804,10 @@ body {
     padding: 1em;
   }
 
+  .technology-article {
+    gap: 0 !important;
+  }
+
   .technology-container {
     display: flex !important;
     flex-direction: column;
