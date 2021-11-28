@@ -515,10 +515,6 @@ pre code {
   padding: 1em;
 }
 
-.article {
-  text-align: center;
-}
-
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6659,6 +6655,7 @@ h6 {
 
 h1 {
   margin: 0;
+  text-align: center;
   color: #5a803d;
 }
 
