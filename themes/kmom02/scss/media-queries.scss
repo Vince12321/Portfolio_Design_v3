@@ -1,0 +1,117 @@
+@media (max-width: 800px) {
+    .title,
+    .logo {
+        padding: 1em 1em 1em 0;
+    }
+
+    .main {
+        padding: 1em !important;
+    }
+
+    // technology
+
+    .sidebar {
+        display: none;
+    }
+
+    .article {
+        padding: 1em;
+    }
+
+    // technologies
+
+    .technology-article {
+        gap: 0 !important;
+    }
+
+    .technology-container {
+        display: flex !important;
+        flex-direction: column;
+        width: none;
+        gap: 20px 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .technology-last-box {
+        width: 200px;
+        height: 150px;
+    }
+
+    .technology-last-box {
+        width: 200px;
+    }
+
+    // mobile-menu
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        ul {
+            flex-direction: column;
+            padding-bottom: 1em;
+        }
+
+        ul li {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        ul li a {
+            display: block;
+            padding: 0.5em 0;
+        }
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    // gallery
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-container {
+        max-width: 100% !important;
+        margin-top: 25px;
+        padding-bottom: 56%;
+    }
+}
+
+@media (max-width: 360px) {
+    .title a h1 {
+        font-size: 20px;
+    }
+
+    .fa-github-alt {
+        margin: 5px;
+    }
+
+    .main h2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 283px) {
+    .fa-5x {
+        font-size: 0 !important;
+    }
+
+    .site-header a {
+        width: 0;
+    }
+}

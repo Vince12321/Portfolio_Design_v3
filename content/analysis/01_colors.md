@@ -22,7 +22,12 @@ Jag granskar elementen på webbplatserna med hjälp av webbläsaren för att få
 Resultat
 -----------------------
 <b>Elgiganten:</b><br>
-<p class="img-parent"><img src="../assets/img/elgiganten.PNG" alt="Elgigantens webbplats"></p>
+<a href="%base_url%/image/elgiganten.PNG" target="_self">
+    <picture>
+        <source media="(min-width: 460px)" srcset="%base_url%/image/elgiganten.PNG&w=770&q=50">
+        <img src="%base_url%/image/elgiganten.PNG&w=460&q=50" alt="Dagens Nyheter">
+    </picture>
+</a>
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: white">
@@ -38,8 +43,13 @@ färgen är Elgigantens varumärkesfärger och den gula symboliserar extrapris.
 Typsnittet är samma för alla rubriker och brödtext: Roboto, Helvetica Neue, Arial, Helvetica, sans-serif och fägen är svart eller grå. Valet av vitgråa färger gör att Elgigantens varumärkesfärger framträder markant vilket jag tror är meningen och även den gula färgen för extrapris syns tydligt.
 <br><br><br>
 
-<b>Berline Philharmoniker</b><br>
-<p class="img-parent"><img src="../assets/img/berliner.PNG" alt="Berliner Philharmonikers webbplats"></p>
+<b>Berliner Philharmoniker</b><br>
+<a href="%base_url%/image/berliner.PNG" target="_self">
+    <picture>
+        <source media="(min-width: 460px)" srcset="%base_url%/image/berliner.PNG&w=770&q=50">
+        <img src="%base_url%/image/berliner.PNG&w=460&q=50" alt="Dagens Nyheter">
+    </picture>
+</a>
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #fff">
@@ -56,7 +66,12 @@ jag också tycker den gör.
 
 <br><br>
 <b>Polisen:</b><br>
-<p class="img-parent"><img src="../assets/img/polisen.PNG" alt="Polisens webbplats"></p>
+<a href="%base_url%/image/polisen.PNG" target="_self">
+    <picture>
+        <source media="(min-width: 460px)" srcset="%base_url%/image/polisen.PNG&w=770&q=50">
+        <img src="%base_url%/image/polisen.PNG&w=460&q=50" alt="Dagens Nyheter">
+    </picture>
+</a>
 <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #fff">
@@ -76,4 +91,4 @@ Analys
 Det verkar som de flesta webbplatser jag kikat på använder ett ackromatiskt färgschema med en eller två accentfärger och tydligt typsnitt. Det är lättnavigerat och fyller sin funktion men ibland kan det kännas lite kalt. De tre webbplatserna jag jämförde hade olika syfte men jag tyckte alla tre vara väldigt lika varandra designmässigt. De blåa och gula accentfärgerna på elgigantens webbplats gör att man vet att man är på Elgigantens webbplats och den gula accentfärgen betyder rea. Berliner Philharmoniker har en stilfull webbplats med deras gula varumärkesfärg som accentfärg så att man känner igen sig. Polisens webbplats kändes ungefär som Elgigantens förutom att de blåa och gula accentfärgerna nog symboliserar polisens färger.<br><br>
 
 
-<b>Vincent Wistrand<b>
+<p class="name-sign"><b>Vincent Wistrand<b></p>

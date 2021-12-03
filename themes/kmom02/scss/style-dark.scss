@@ -5,6 +5,9 @@
 @import 'code';
 @import 'technologies';
 @import 'technology';
+@import 'analysis';
+@import 'gallery';
+@import 'media-queries';
 
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -71,6 +74,18 @@ body {
     /* margin: 8px auto; */
     /* max-width: 1100px; */
     width: 100%;
+}
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+img {
+    margin: auto;
+    box-shadow: $img-shadow;
 }
 
 /* Header */
@@ -181,64 +196,6 @@ body {
     margin: 0 15px;
 }
 
-/* Responiveness */
-
-@media (max-width: 787px) {
-    .title,
-    .logo {
-        padding: 1em 1em 1em 0;
-    }
-
-    .main {
-        padding: 1em;
-    }
-
-    .technology-article {
-        gap: 0 !important;
-    }
-
-    .technology-container {
-        display: flex !important;
-        flex-direction: column;
-        width: none;
-        gap: 20px 45px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .technology-last-box {
-        width: 200px;
-        height: 150px;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .article {
-        padding: 1em;
-    }
-
-    .technology-last-box {
-        width: 200px;
-    }
-
-}
-
-@media (max-width: 360px) {
-    .title a h1 {
-        font-size: 20px;
-    }
-
-    .fa-github-alt {
-        margin: 5px;
-    }
-
-    .main h2 {
-        font-size: 15px;
-    }
-}
-
 /* Typografy */
 
 body {
@@ -255,14 +212,4 @@ dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
-}
-
-img {
-    max-width: 100%;
-    margin: 1em auto;
-    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
-}
-
-.img-parent {
-    text-align: center;
 }
