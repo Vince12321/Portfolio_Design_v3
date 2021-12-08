@@ -23,9 +23,7 @@ Resultat
 -----------------------
 <b>Mätningsdata: </b><br>
 
-<div class="excel-container">
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRA5MLeQJ-iscvci4VQunubTZ9hmADrZ5x-rXigIVZv2pOvEJyzb9Fhp3FhoDN2yUe6NzjOAlctG8GI/pubhtml?widget=true&amp;headers=false"></iframe>
-</div>
+https://docs.google.com/spreadsheets/d/e/2PACX-1vRA5MLeQJ-iscvci4VQunubTZ9hmADrZ5x-rXigIVZv2pOvEJyzb9Fhp3FhoDN2yUe6NzjOAlctG8GI/pubhtml
 <br><br>
 <b>Dagens Nyheter:</b>
 
