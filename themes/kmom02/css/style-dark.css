@@ -415,6 +415,19 @@ pre code {
   gap: 45px 45px;
 }
 
+.technology-container a {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.technology-container a:nth-last-child(1) {
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+  width: 90%;
+}
+
 .head {
   grid-column: span 3;
   justify-self: center;
@@ -422,6 +435,7 @@ pre code {
 }
 
 .technology {
+  color: #333b43;
   border-radius: 25px;
   border: 2px solid #5a803d;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
@@ -430,28 +444,44 @@ pre code {
   height: 150px;
   text-align: center;
   margin: auto;
-  /* grid-template-columns: auto;
-  grid-template-rows: 50px 100px 50px; */
 }
 
-.technology-last-box {
-  grid-column: span 3;
+.technology-last {
+  grid-column: span 3 !important;
   justify-self: center;
   text-align: center;
-  width: 700px;
-  height: 150px;
+  width: 100%;
+  color: #333b43;
   border-radius: 25px;
   border: 2px solid #5a803d;
   box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
   padding: 20px;
+  height: 150px;
+  text-align: center;
+  margin: auto;
 }
 
-.technology:hover {
+.technology:hover,
+.technology-last:hover {
   background-color: #5a803d;
 }
 
-.technology-last-box:hover {
+.technology-last-box:hover,
+.technology-last:hover {
   background-color: #5a803d;
+}
+
+.technology-container a div {
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.technology-container a:hover div {
+  transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .technology-article {
@@ -470,6 +500,51 @@ pre code {
 
 .name-sign {
   text-align: right;
+}
+
+.analysis-container {
+  display: grid;
+  gap: 45px 45px;
+  flex: unset !important;
+  height: 100%;
+}
+
+.analysis-container a {
+  margin-bottom: 100%;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.analysis {
+  color: #333b43;
+  border-radius: 25px;
+  border: 2px solid #5a803d;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  margin: auto;
+  /* grid-template-columns: auto;
+  grid-template-rows: 50px 100px 50px; */
+}
+
+.analysis:hover {
+  background-color: #5a803d;
+}
+
+.analysis-container a div {
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.analysis-container a:hover div {
+  transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .gallery-container {
@@ -503,6 +578,18 @@ pre code {
   margin: auto;
   width: 100%;
   height: 100%;
+}
+
+.hover01 a picture img {
+  transform: scale(1);
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover01 a picture:hover img {
+  transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
@@ -543,6 +630,15 @@ pre code {
 
   .technology-last-box {
     width: 200px;
+  }
+
+  .analysis-container {
+    display: flex !important;
+    flex-direction: column;
+    width: none;
+    gap: 20px 45px;
+    justify-content: center;
+    align-items: center;
   }
 
   .header {
@@ -6749,11 +6845,11 @@ h6 {
 h1 {
   margin: 0;
   text-align: center;
-  color: #5a803d;
+  color: #72a34d;
 }
 
 h2 {
-  color: #5a803d;
+  color: #72a34d;
 }
 
 ol,
@@ -6769,6 +6865,10 @@ html,
 body {
   height: 100%;
   color: #b4b5b6;
+}
+
+::selection {
+  background: #72a34d;
 }
 
 /* Placement */
@@ -6827,7 +6927,7 @@ img {
 }
 
 .title * {
-  color: #5a803d;
+  color: #72a34d;
   position: relative;
   top: 5px;
   text-decoration: none;
@@ -6853,11 +6953,12 @@ img {
 .main {
   flex: 1 0 auto;
   padding: 3em;
-  margin: 4px 0;
+  margin: 1em 0;
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  border-radius: 5px;
 }
 
 .main h2 {
@@ -6887,7 +6988,12 @@ img {
   color: #222;
 }
 
-.footer .social {
+.footer div p a {
+  color: #b4b5b6;
+}
+
+.footer,
+.social {
   font-size: 2rem;
 }
 

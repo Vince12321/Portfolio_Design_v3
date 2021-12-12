@@ -3,14 +3,14 @@
 <body>
     {% include 'incl/nav.twig' %}
 
-    <div class="main technology-container" role="main">
+    <div class="main analysis-container" role="main">
         <div class="head">
             {{ content }}
         </div>
         {% for page in pages("analysis") %}
             <a href="{{ page.url }}">
-            <div class="technology">
-                <b>{{ page.title }}</b><br><br>
+            <div class="analysis">
+                <b style="text-decoration: none;">{{ page.title }}</b><br><br>
                 <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
             </div>
             </a>

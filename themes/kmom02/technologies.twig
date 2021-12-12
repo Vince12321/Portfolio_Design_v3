@@ -9,21 +9,19 @@
         </div>
         {% for page in pages("technology") %}
             <a href="{{ page.url }}">
-            <div class="technology">
-                <b>{{ page.title }}</b><br><br>
-                <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
-            </div>
+                <div class="technology">
+                    <b>{{ page.title }}</b><br><br>
+                    <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
+                </div>
             </a>
          {% endfor %}
          {% for page in pages("technology/sqlite") %}
-             <div class="technology-last-box">
              <a href="{{ page.url }}">
-                 <div class="technologyLast">
-                 <b>{{ page.title }}</b><br><br>
-                 <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
-                 </div>
+                     <div class="technology-last">
+                         <b>{{ page.title }}</b><br><br>
+                         <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
+                     </div>
              </a>
-             </div>
           {% endfor %}
     </div>
 

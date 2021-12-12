@@ -66,6 +66,10 @@ body {
     color: $font-color-dark;
 }
 
+::selection {
+    background: $title-color;
+}
+
 /* Placement */
 
 body {
@@ -152,11 +156,12 @@ img {
 .main {
     flex: 1 0 auto;
     padding: 3em;
-    margin: 4px 0;
+    margin: 1em 0;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 5px;
 }
 
 .main h2 {
@@ -187,7 +192,11 @@ img {
     color: #222;
 }
 
-.footer
+.footer div p a {
+    color: $font-color-dark;
+}
+
+.footer,
 .social {
     font-size: 2rem;
 }

@@ -10,7 +10,7 @@ Om mig
 <picture>
     <source media="(min-width: 800px)" srcset="%base_url%/image/sparvagn.jpg&w=1004">
     <source media="(min-width: 460px)" srcset="%base_url%/image/sparvagn.jpg&w=770">
-    <img src="%base_url%/image/sparvagn.jpg&w=430" alt="Spårvagn">
+    <img src="%base_url%/image/sparvagn.jpg&w=430&h=225" alt="Spårvagn">
 </picture>
 
 <br>

@@ -42,6 +42,17 @@
         width: 200px;
     }
 
+    // analysis
+
+    .analysis-container {
+        display: flex !important;
+        flex-direction: column;
+        width: none;
+        gap: 20px 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
     // mobile-menu
 
     .header {

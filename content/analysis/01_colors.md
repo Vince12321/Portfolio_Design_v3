@@ -22,10 +22,10 @@ Jag granskar elementen på webbplatserna med hjälp av webbläsaren för att få
 Resultat
 -----------------------
 <b>Elgiganten:</b><br>
-<a href="%base_url%/image/elgiganten.PNG" target="_self">
+<a href="%base_url%/image/elgiganten.PNG" target="_self" aria-label="Elgigantens webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/elgiganten.PNG&w=770&q=50">
-        <img src="%base_url%/image/elgiganten.PNG&w=460&q=50" alt="Dagens Nyheter">
+        <img src="%base_url%/image/elgiganten.PNG&w=460&q=50" alt="Elgigantens webbplats">
     </picture>
 </a>
 <table style="border-spacing: 4px; border-collapse: separate">
@@ -44,7 +44,7 @@ Typsnittet är samma för alla rubriker och brödtext: Roboto, Helvetica Neue, A
 <br><br><br>
 
 <b>Berliner Philharmoniker</b><br>
-<a href="%base_url%/image/berliner.PNG" target="_self">
+<a href="%base_url%/image/berliner.PNG" target="_self" aria-label="Berliner Philharmonikers webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/berliner.PNG&w=770&q=50">
         <img src="%base_url%/image/berliner.PNG&w=460&q=50" alt="Dagens Nyheter">
@@ -66,7 +66,7 @@ jag också tycker den gör.
 
 <br><br>
 <b>Polisen:</b><br>
-<a href="%base_url%/image/polisen.PNG" target="_self">
+<a href="%base_url%/image/polisen.PNG" target="_self" aria-label="Polisens webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/polisen.PNG&w=770&q=50">
         <img src="%base_url%/image/polisen.PNG&w=460&q=50" alt="Dagens Nyheter">

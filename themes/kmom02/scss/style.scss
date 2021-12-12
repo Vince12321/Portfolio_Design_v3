@@ -18,11 +18,14 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&display=swap');
 
 body {
-    background-color: $background-color-body;
+    background-image: url('../../../assets/img/road.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-y: scroll;
 }
 
 * {
-    color: $font-color;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     border: 0 none;
@@ -58,6 +61,10 @@ ul {
 html,
 body {
     height: 100%;
+}
+
+::selection {
+    background: $title-color;
 }
 
 /* Placement */
@@ -96,17 +103,19 @@ img {
 .headheader {
     width: 100%;
     background-color: $background-color-header-footer;
+    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
 .header {
     background-color: $background-color-header-footer;
+    color: $font-color-header-footer;
     max-width: 1100px;
     margin: 0 auto;
-    box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
 .fa-github-alt {
     margin: 20px;
+    color: $font-color-header-footer;
 }
 
 .nav a,
@@ -116,6 +125,11 @@ img {
 }
 
 .nav a:hover {
+    color: $font-color-nav-hover;
+    text-decoration: underline;
+}
+
+.active {
     color: $font-color-nav-hover;
     text-decoration: underline;
 }
@@ -147,13 +161,18 @@ img {
 .main {
     flex: 1 0 auto;
     padding: 3em;
-    /* margin: 1em 0; */
+    margin: 1em 0;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     background-color: $background-color-main;
     box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
+    border-radius: 5px;
+}
+
+.main * {
+    color: $font-color-main;
 }
 
 .main h2 {
@@ -167,22 +186,24 @@ img {
     justify-content: space-between;
     border-top: $border-style;
     padding: 8px;
-    border-radius: 0 0 15px 15px;
     background-color: $background-color-header-footer;
     box-shadow: rgba(14, 30, 37, 0.12) 0 2px 4px 0, rgba(14, 30, 37, 0.32) 0 2px 16px 0;
 }
 
 .footer a {
     color: #222;
+    color: $font-color-header-footer;
 }
 
 .footer
 .social {
     font-size: 2rem;
+    color: $font-color-header-footer;
 }
 
 .social a {
     margin: 0 15px;
+    color: $font-color-header-footer;
 }
 
 /* Typografy */

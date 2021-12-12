@@ -3,6 +3,19 @@
     gap: 45px 45px;
 }
 
+.technology-container a {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.technology-container a:nth-last-child(1) {
+    grid-column: span 3;
+    justify-self: center;
+    text-align: center;
+    width: 90%;
+}
+
 .head {
     grid-column: span 3;
     justify-self: center;
@@ -10,6 +23,7 @@
 }
 
 .technology {
+    color: $font-color-main;
     border-radius: 25px;
     border: 2px solid $technologies-color;
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
@@ -18,27 +32,43 @@
     height: 150px;
     text-align: center;
     margin: auto;
-    /* grid-template-columns: auto;
-    grid-template-rows: 50px 100px 50px; */
 }
 
-
-.technology-last-box {
-    grid-column: span 3;
+.technology-last {
+    grid-column: span 3 !important;
     justify-self: center;
     text-align: center;
-    width: 700px;
-    height: 150px;
+    width: 100%;
+    color: $font-color-main;
     border-radius: 25px;
     border: 2px solid $technologies-color;
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
     padding: 20px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+
 }
 
-.technology:hover {
+.technology:hover,
+.technology-last:hover {
     background-color: $technologies-color;
 }
 
-.technology-last-box:hover {
+.technology-last-box:hover,
+.technology-last:hover {
     background-color: $technologies-color;
+}
+
+.technology-container a div {
+    transform: scale(1);
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.technology-container a:hover div {
+    transform: scale(1.1);
+    transform: scale(1.1);
 }

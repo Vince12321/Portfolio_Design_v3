@@ -27,7 +27,7 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRA5MLeQJ-iscvci4VQunubTZ9hmADrZ
 <br><br>
 <b>Dagens Nyheter:</b>
 
-<a href="%base_url%/image/DN.PNG" target="_self">
+<a href="%base_url%/image/DN.PNG" target="_self" aria-label="Dagens Nyheters webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/DN.PNG&w=770&q=50">
         <img src="%base_url%/image/DN.PNG&w=460&q=50" alt="Dagens Nyheter">
@@ -39,7 +39,7 @@ Den här webbplatsen har mycket reklam som nog tar en del tid men om man inspekt
 
 <b>Moderna Muséet i Stockholm</b>
 
-<a href="%base_url%/image/moderna_museet.PNG" target="_self">
+<a href="%base_url%/image/moderna_museet.PNG" target="_self" aria-label="Moderna Muséets webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/moderna_museet.PNG&w=770&q=50">
         <img src="%base_url%/image/moderna_museet.PNG&w=787" alt="Moderna Muséet i Stockholm&w=460&q=50">
@@ -51,7 +51,7 @@ På den här webbplatsen är bilderna responsiva och bilderna ser bra ut i alla 
 
 <b>SJ:</b>
 
-<a href="%base_url%/image/c.PNG" target="_self">
+<a href="%base_url%/image/c.PNG" target="_self" aria-label="SJ:s webbplats">
     <picture>
         <source media="(min-width: 460px)" srcset="%base_url%/image/SJ.PNG&w=770&q=50">
         <img src="%base_url%/image/SJ.PNG&w=787" alt="SJ&w=460&q=50">

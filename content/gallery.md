@@ -7,7 +7,7 @@ Template: index
 #Galleri
 --------------------------
 <br>
-<div class="gallery-container">
+<div class="gallery-container hover01">
     <a href="%base_url%/image/skiing.jpg" target="_self">
         <picture>
             <source media="(max-width: 460px)" srcset="%base_url%/image/skiing.jpg&w=440&q=80">

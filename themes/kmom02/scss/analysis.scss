@@ -1,3 +1,48 @@
 .name-sign {
     text-align: right;
 }
+
+.analysis-container {
+    display: grid;
+    gap: 45px 45px;
+    flex: unset !important;
+    height: 100%;
+}
+
+.analysis-container a {
+    margin-bottom: 100%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.analysis {
+    color: $font-color-main;
+    border-radius: 25px;
+    border: 2px solid $technologies-color;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    /* grid-template-columns: auto;
+    grid-template-rows: 50px 100px 50px; */
+}
+
+.analysis:hover {
+    background-color: $technologies-color;
+}
+
+.analysis-container a div {
+    transform: scale(1);
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.analysis-container a:hover div {
+    transform: scale(1.1);
+    transform: scale(1.1);
+}
